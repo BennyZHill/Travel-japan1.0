@@ -32,6 +32,20 @@ body {
   padding: 200px;
   text-shadow: 0 -8px 30px black, 0 8px 30px black;
 }
+.subtitle {
+  position: inherit;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: aliceblue;
+  text-align: center;
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+}
 
 nav {
   width: 100vw;
