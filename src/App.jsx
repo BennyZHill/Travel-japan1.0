@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from "./components/Nav";
-import About from "./components/About";
+import About from "./components/places/About";
 import Home from "./components/Home";
-import Contact from "./components/Contact";
+import Contact from "./components/places/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -25,13 +25,10 @@ const App = () => {
           <Route path="/kyushu" exact component={Kyushu} />
           <Route path="/okinawa" component={Okinawa} />
           <Route path="/" exact component={Home} />
-        </Switch>
-
-        <Footer />
-        <Switch>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
