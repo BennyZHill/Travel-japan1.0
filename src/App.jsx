@@ -14,9 +14,8 @@ import Okinawa from "./components/places/Okinawa";
 
 const App = () => {
   return (
-    <Router>
-      <div className="container">
-        <div class="cursor"></div>
+    <Router className="container">
+      <>
         <Nav />
         <Switch>
           <Route path="/hokkaido" exact component={Hokkaido} />
@@ -29,7 +28,7 @@ const App = () => {
           <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
-      </div>
+      </>
     </Router>
   );
 };

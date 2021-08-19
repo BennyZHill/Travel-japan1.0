@@ -1,0 +1,57 @@
+.honshu-image {
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/japan2.jpeg);
+  background-position: bottom;
+  background: fill;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.main-text {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 9px;
+}
+.second-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 9px;
+}
+.final-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 9px;
+}
