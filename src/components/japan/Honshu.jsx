@@ -6,7 +6,7 @@ function Honshu() {
       <div className="Honshu">
         <h1 className="Honshu-title">Honshu</h1>
 
-        <div className="hokkaido-image" />
+        <div className="honshu-image" />
 
         <p className="main-text">
           Honshu is Japan’s main island and home to most of the country’s major

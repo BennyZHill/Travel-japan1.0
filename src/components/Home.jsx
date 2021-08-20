@@ -4,7 +4,7 @@ const Home = () => {
     <div>
       <h1 className="title">Travel Japan</h1>
       <h2 className="subtitle">Welcome to your adventure</h2>
-      <div className="home-image" />
+      <div className="home-image"></div>
       <p className="text"></p>
     </div>
   );

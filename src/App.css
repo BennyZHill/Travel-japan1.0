@@ -43,7 +43,7 @@ Nav {
   position: fixed;
   display: flex;
   justify-content: space-around;
-  min-height: 11vh;
+  min-height: 10vh;
   color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: bolder;
@@ -57,6 +57,7 @@ Nav {
   justify-content: space-around;
   list-style: none;
   align-items: center;
+  text-align: center;
 }
 
 li:hover,
@@ -78,14 +79,14 @@ li:focus {
   left: 50%;
   height: 100vh;
   width: 100vw;
-  background: url(./components/images/home.jpeg);
+  background-image: url(./components/images/home.jpeg);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
   overflow: hidden;
   filter: brightness(0.8);
 }
-.about-image {
+.home-image.active .about-image {
   z-index: -1;
   position: absolute;
   transform: translate(-50%, -50%);
