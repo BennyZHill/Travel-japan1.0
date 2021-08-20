@@ -1,0 +1,118 @@
+.Honshu {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+.Honshu-title {
+  position: inherit;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: aliceblue;
+  text-align: center;
+
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  margin-top: 10%;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+}
+.honshu-image {
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/japan4.jpeg);
+  background-position: bottom;
+  background: fill;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  filter: brightness(0.7);
+}
+.main-text {
+  position: relative;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 10%;
+}
+.image-collage {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  width: 70vw;
+  display: flex;
+  position: relative;
+}
+.image1 {
+  border: 2px white solid;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image: url(../images/tokyo1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image2 {
+  z-index: -1;
+  left: 200px;
+  position: absolute;
+  border: 2px white solid;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image: url(../images/fuji.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image3 {
+  z-index: -1;
+  right: 200px;
+  position: absolute;
+  border: 2px white solid;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+
+  background-image: url(../images/sakura.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.second-text {
+  position: relative;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(0px);
+  border: none;
+  border-radius: 9px;
+}
+.final-text {
+  position: relative;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 9px;
+  text-align: center;
+}

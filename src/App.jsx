@@ -1,21 +1,21 @@
 import React from "react";
 import Nav from "./components/Nav";
-import About from "./components/places/About";
+import About from "./components/japan/About";
 import Home from "./components/Home";
-import Contact from "./components/places/Contact";
+import Contact from "./components/japan/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Hokkaido from "./components/places/Hokkaido";
-import Honshu from "./components/places/Honshu";
-import Shikoku from "./components/places/Shikoku";
-import Kyushu from "./components/places/Kyushu";
-import Okinawa from "./components/places/Okinawa";
+import Hokkaido from "./components/japan/Hokkaido";
+import Honshu from "./components/japan/Honshu";
+import Shikoku from "./components/japan/Shikoku";
+import Kyushu from "./components/japan/Kyushu";
+import Okinawa from "./components/japan/Okinawa";
 
 const App = () => {
   return (
-    <Router className="container">
-      <>
+    <Router>
+      <div className="container">
         <Nav />
         <Switch>
           <Route path="/hokkaido" exact component={Hokkaido} />
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
-      </>
+      </div>
     </Router>
   );
 };

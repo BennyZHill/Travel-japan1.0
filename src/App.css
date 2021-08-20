@@ -18,20 +18,7 @@ body {
   align-items: center;
   overflow: scroll;
 }
-.title {
-  position: inherit;
-  font-size: 3.5rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-  color: aliceblue;
-  text-align: center;
-  backdrop-filter: blur(1px);
-  border-radius: 8px;
-  align-items: center;
-  justify-content: space-around;
-  padding: 200px;
-  text-shadow: 0 -8px 30px black, 0 8px 30px black;
-}
+
 .subtitle {
   position: inherit;
   font-size: 3.5rem;
@@ -47,8 +34,13 @@ body {
   text-shadow: 0 -8px 30px black, 0 8px 30px black;
 }
 
-nav {
+Nav {
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 5%;
+  left: 50%;
   width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   min-height: 11vh;
@@ -60,32 +52,24 @@ nav {
 }
 .nav-links {
   display: flex;
+  position: sticky;
   width: 80%;
   justify-content: space-around;
   list-style: none;
   align-items: center;
-  text-shadow: 0 0 10px black;
-}
-li {
-  text-shadow: 0 0 10px black;
-  padding-bottom: 5px;
 }
 
 li:hover,
 li:focus {
-  border-bottom: 5px solid rgb(255, 116, 2);
-  border-radius: 5px;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(255, 140, 0) 50%,
+    rgb(247, 247, 247) 50%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.footers {
-  padding-bottom: 10px;
-  border-bottom: 8px solid rgba(174, 0, 255, 0.424);
-  border-radius: 2px;
-  /* transition: ease 0.5s; */
-}
-.footers:hover {
-  color: rgb(121, 121, 121);
-  border-bottom: 12px solid rgb(251, 251, 251);
-}
+
 .home-image {
   z-index: -1;
   position: absolute;
@@ -148,21 +132,6 @@ li:focus {
   border-radius: 9px;
 }
 
-.honshu-image {
-  z-index: -1;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  height: 100vh;
-  width: 100vw;
-  background-image: url(./components/images/japan2.jpeg);
-  background-position: bottom;
-  background: fill;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
 .kyushu-image {
   z-index: -1;
   position: absolute;
@@ -176,21 +145,6 @@ li:focus {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-}
-.hokkaido {
-  z-index: -1;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  height: 100vh;
-  width: 100vw;
-  background-image: url(./components/images/japan.jpeg);
-  background-position: center;
-  background: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  filter: brightness(0.85);
 }
 
 .okinawa-image {
@@ -233,13 +187,14 @@ li:focus {
   align-items: center;
 }
 footer {
+  box-shadow: 0 0 20px white;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   margin-top: auto;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
-  background: black;
+  background: rgb(0, 0, 0);
   height: 10vh;
 }
