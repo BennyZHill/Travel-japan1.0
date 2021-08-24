@@ -46,6 +46,19 @@
   backdrop-filter: blur(5px);
   border: none;
   border-radius: 9px;
+  margin-bottom: 9%;
+}
+.second-text {
+  margin-top: 0%;
+  position: relative;
+  color: white;
+  width: 80vw;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 -8px 30px black, 0 8px 30px black;
+  backdrop-filter: blur(0px);
+  border: none;
+  border-radius: 9px;
   margin-bottom: 10%;
 }
 .image-collage {
@@ -56,18 +69,19 @@
   width: 70vw;
   display: flex;
   position: relative;
+  margin: 0%;
 }
-.image1 {
+.hk1 {
   border: 2px white solid;
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  background-image: url(../images/hokkaido2.jpeg);
-  background-position: center;
+  background-image: url(../images/niseko.jpeg);
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.image2 {
+.hk2 {
   z-index: -1;
   left: 200px;
   position: absolute;
@@ -75,12 +89,12 @@
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  background-image: url(../images/fuji.jpeg);
-  background-position: center;
+  background-image: url(../images/hokkaido2.jpeg);
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.image3 {
+.hk3 {
   z-index: -1;
   right: 200px;
   position: absolute;
@@ -88,23 +102,12 @@
   height: 400px;
   width: 400px;
   border-radius: 50%;
-
-  background-image: url(../images/sakura.jpeg);
+  background-image: url(../images/toya.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.second-text {
-  position: relative;
-  color: white;
-  width: 80vw;
-  font-size: 2rem;
-  text-align: center;
-  text-shadow: 0 -8px 30px black, 0 8px 30px black;
-  backdrop-filter: blur(0px);
-  border: none;
-  border-radius: 9px;
-}
+
 .final-text {
   position: relative;
   color: white;
